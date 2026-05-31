@@ -1020,21 +1020,21 @@ body {
         z-index: 10000;
     }
     
-    /* When checkbox is checked, show nav */
-    .header__menu-toggle:checked ~ .header__nav {
+    /* When menu is open, show nav */
+    .header__nav--open {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
     }
     
     /* Hamburger animation to X */
-    .header__menu-toggle:checked + .header__menu-icon span:nth-child(1) {
+    .header__menu-icon--open span:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
     }
-    .header__menu-toggle:checked + .header__menu-icon span:nth-child(2) {
+    .header__menu-icon--open span:nth-child(2) {
         opacity: 0;
     }
-    .header__menu-toggle:checked + .header__menu-icon span:nth-child(3) {
+    .header__menu-icon--open span:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
 }
