@@ -168,12 +168,11 @@
                 <span class="header__logo-text">PANNON<span class="header__logo-accent">VOLT</span></span>
             </a>
             <!-- Mobile Menu Toggle -->
-            <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
-            <label for="menu-toggle" class="header__menu-icon">
+            <button type="button" class="header__menu-icon" aria-label="Menü">
                 <span></span>
                 <span></span>
                 <span></span>
-            </label>
+            </button>
             <nav class="header__nav">
                 <a href="index.html" class="header__nav-link">Főoldal</a>
                 <a href="index.html#services" class="header__nav-link">Szolgáltatások</a>
@@ -211,11 +210,11 @@
                 <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; font-weight: 500; color: #1e293b;">
                     <input type="checkbox" id="sos-evening" onchange="if(targetMarker) calculate(targetMarker.getLatLng().lat, targetMarker.getLatLng().lng)">
                     Esti hívás (18:00-22:00) [+50%]
-                </label>
+                </button>
                 <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; font-weight: 500; color: #1e293b;">
                     <input type="checkbox" id="sos-weekend" onchange="if(targetMarker) calculate(targetMarker.getLatLng().lat, targetMarker.getLatLng().lng)">
                     Hétvége / Ünnepnap [+100%]
-                </label>
+                </button>
             </div>
 
             <div id="sos-map"></div>

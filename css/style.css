@@ -966,15 +966,6 @@ body {
     }
 }
 
-.header__menu-toggle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    z-index: -1;
-}
-
 .header__menu-icon {
     display: none;
     position: relative;
@@ -984,6 +975,9 @@ body {
     height: 21px;
     cursor: pointer;
     z-index: 1000;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 .header__menu-icon span {

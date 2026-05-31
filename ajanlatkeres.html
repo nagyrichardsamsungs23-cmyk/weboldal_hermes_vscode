@@ -32,12 +32,11 @@
                 <span class="header__logo-text">PANNON<span class="header__logo-accent">VOLT</span></span>
             </a>
             <!-- Mobile Menu Toggle -->
-            <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
-            <label for="menu-toggle" class="header__menu-icon">
+            <button type="button" class="header__menu-icon" aria-label="Menü">
                 <span></span>
                 <span></span>
                 <span></span>
-            </label>
+            </button>
             <nav class="header__nav">
                 <a href="index.html" class="header__nav-link">Főoldal</a>
                 <a href="index.html#services" class="header__nav-link">Szolgáltatások</a>
@@ -67,22 +66,22 @@
                 
                 <div class="quote-form__row">
                     <div class="quote-form__field">
-                        <label class="quote-form__label" for="name">Teljes név *</label>
+                        <label class="quote-form__label" for="name">Teljes név *</button>
                         <input class="quote-form__input" type="text" id="name" name="name" placeholder="pl. Kovács István" required>
                     </div>
                     <div class="quote-form__field">
-                        <label class="quote-form__label" for="email">Email cím *</label>
+                        <label class="quote-form__label" for="email">Email cím *</button>
                         <input class="quote-form__input" type="email" id="email" name="email" placeholder="pl. kovacs.istvan@email.hu" required>
                     </div>
                 </div>
 
                 <div class="quote-form__row">
                     <div class="quote-form__field">
-                        <label class="quote-form__label" for="phone">Telefonszám *</label>
+                        <label class="quote-form__label" for="phone">Telefonszám *</button>
                         <input class="quote-form__input" type="tel" id="phone" name="phone" placeholder="pl. +36 30 123 4567" required>
                     </div>
                     <div class="quote-form__field">
-                        <label class="quote-form__label" for="service">Milyen szolgáltatás érdekli?</label>
+                        <label class="quote-form__label" for="service">Milyen szolgáltatás érdekli?</button>
                         <select class="quote-form__input quote-form__select" id="service" name="service">
                             <option value="">-- Válasszon --</option>
                             <option value="villanyszereles">Villanyszerelés</option>
@@ -97,7 +96,7 @@
                 </div>
 
                 <div class="quote-form__field quote-form__field--full">
-                    <label class="quote-form__label" for="message">Üzenet (opcionális)</label>
+                    <label class="quote-form__label" for="message">Üzenet (opcionális)</button>
                     <textarea class="quote-form__input quote-form__textarea" id="message" name="message" placeholder="Írja le röviden, milyen munkára lenne szüksége..."></textarea>
                 </div>
 
