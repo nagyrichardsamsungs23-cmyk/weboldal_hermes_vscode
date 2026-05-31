@@ -925,6 +925,7 @@ body {
     cursor: pointer;
     position: relative;
     list-style: none; /* Hide default arrow */
+    display: block;   /* Teljes felület kattintható mobilon is */
 }
 
 /* Hide default summary arrow in Safari/Chrome */
@@ -940,8 +941,9 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 24px;
-    color: #dc2626; /* Using the red accent color from the theme */
+    color: #dc2626;
     transition: transform 0.3s ease;
+    pointer-events: none; /* Kattintás átengedése */
 }
 
 .faq__item[open] .faq__question::after {
