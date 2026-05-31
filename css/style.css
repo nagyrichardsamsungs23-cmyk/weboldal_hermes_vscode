@@ -1050,6 +1050,15 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     gap: 12px;
+    /* A konténer bounding boxa nagyobb, mint a látható gomb (a rejtett
+       fab-menu is helyet foglal). Pointer-eventst kikapcsoljuk, hogy
+       ne fogjon el kattintásokat a mögöttes tartalom (pl. GYIK) elől. */
+    pointer-events: none;
+}
+
+.fab-main,
+.fab-item {
+    pointer-events: auto;
 }
 .fab-toggle {
     display: none;
@@ -1064,13 +1073,21 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 28px;
-    cursor: pointer;
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
     box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);
     transition: transform 0.3s ease, background 0.3s ease;
 }
 .fab-main:hover {
     transform: scale(1.05);
     background: #15803d;
+}
+.fab-container--dragging .fab-main {
+    cursor: grabbing;
+    transform: none;
+    transition: none;
 }
 .fab-icon-close {
     display: none;
@@ -1099,6 +1116,19 @@ body {
 .fab-toggle:checked ~ .fab-menu {
     opacity: 1;
     visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+/* Ha a FAB a viewport felső felében van, a menü a főgomb alatt jelenjen
+   meg (lefelé nyíljon). */
+.fab-container--top {
+    flex-direction: column;
+}
+.fab-container--top .fab-menu {
+    transform: translateY(-20px) scale(0.8);
+    transform-origin: top center;
+}
+.fab-container--top .fab-toggle:checked ~ .fab-menu {
     transform: translateY(0) scale(1);
 }
 .fab-item {
