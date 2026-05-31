@@ -875,7 +875,7 @@ body {
 
 /* ===== FAQ SECTION ===== */
 .faq {
-    padding: 80px 24px;
+    padding: 80px 24px 140px; /* Extra alsó hely a FAB gomb miatt */
     background-color: #f8fafc;
 }
 
