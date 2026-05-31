@@ -36,11 +36,10 @@ Következő ellenőrzés: —
 
 ## 🔧 TECHNIKAI HIBÁK
 
-### 3. Duplikált CSS szabály
-**Hol:** css/style.css, 420-430. sor környéke  
-**Probléma:** A `.quote-hero__subtitle` kétszer van definiálva egymás alatt  
-**Teendő:** A duplikátum törlése
-- [ ] style.css javítása
+### 3. ~~Duplikált CSS szabály~~ ✅ KÉSZ (2026.05.31.)
+**Hol:** css/style.css, 426-430. sor  
+**Probléma:** A `.quote-hero__subtitle` kétszer volt definiálva egymás alatt  
+**Megoldva:** A duplikátum törölve
 
 ### 4. Inline JavaScript kiszervezése
 **Hol:** hibaelharitas.html  
