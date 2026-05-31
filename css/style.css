@@ -968,6 +968,8 @@ body {
 
 .header__menu-toggle {
     position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
     pointer-events: none;
     z-index: -1;
@@ -975,6 +977,7 @@ body {
 
 .header__menu-icon {
     display: none;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -1014,7 +1017,7 @@ body {
         visibility: hidden;
         transform: translateY(-20px);
         transition: all 0.3s ease;
-        z-index: 999;
+        z-index: 10000;
     }
     
     /* When checkbox is checked, show nav */
