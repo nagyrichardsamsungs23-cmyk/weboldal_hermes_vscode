@@ -1003,7 +1003,7 @@ body {
         flex-direction: column !important; /* Override previous flex-wrap */
         align-items: center;
         gap: 16px;
-        padding: 24px;
+        padding: 24px 24px 48px;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
 
         /* Landscape-ben se csússzon le a képernyőről */
